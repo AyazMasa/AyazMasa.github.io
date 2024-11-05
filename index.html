@@ -1,18 +1,162 @@
-<!-- Creator: Ayaz 
- Surname: Masa 
- Group: EKfu-23 -->
 <!DOCTYPE html>
-<html lang="lt">
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A sample HTML document for lab assignment">
-    <title>Lab Assignment</title>
-    <link rel="stylesheet" href="style.css"> 
+    <!-- Created by Ayaz Masa -->
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Ayaz Masa - Portfolio</title>
+    <meta name="description" content="Ayaz Masa's professional portfolio website">
+    <meta name="keywords" content="Ayaz Masa, portfolio, web development, resume, projects">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts and CSS Files -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Welcome to My Lab Assignment Page</h1>
-    <p><b>This</b><i> is a placeholder</i><u> text for the</u> section of the document.</p>
+
+<body class="index-page">
+    <!-- Header with Navigation -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <h1 class="sitename">Ayaz Masa</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+        <div class="container text-center" data-aos="zoom-out">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Ayaz Masa</h2>
+                    <p>I'm a web developer based in Vilnius</p>
+                    <a href="#about" class="btn-get-started">About Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Ayaz Masa, a passionate web developer with expertise in both front-end and back-end technologies. I thrive on bringing creative ideas to life and building beautiful, functional websites that provide users with a seamless experience. With a strong foundation in HTML, CSS, and JavaScript, I create responsive, dynamic interfaces that adapt to different devices. I’m equally skilled in back-end development, using Python, Node.js, and SQL to ensure efficient data handling and server-side functionality.
+
+              In addition to web technologies, I have experience with languages like C++ and Java, which add depth to my programming knowledge and allow me to tackle more complex coding challenges. I also have a working understanding of frameworks and libraries like React, Vue.js, and Django, and I frequently use Git for version control to collaborate effectively on team projects. I'm constantly learning and experimenting with new tools and methodologies to enhance my skills and stay up-to-date in the ever-evolving world of technology.</p>
+        </div>
+    </section>
+
+   <!-- Resume Section -->
+<section id="resume">
+  <div class="container">
+      <h2>Resume</h2>
+      
+      <!-- Experience Section -->
+      <div class="resume-item">
+          <h3>Experience</h3>
+          <h4>Web Developer</h4>
+          <p><em>Vilnius Gediminas Technical University</em></p>
+          <p>June 2024 - Present</p>
+          <ul>
+              <li>Developing and maintaining web applications for university projects.</li>
+              <li>Collaborating with cross-functional teams to enhance the university’s online presence.</li>
+              <li>Implementing responsive design and ensuring compatibility across various devices.</li>
+              <li>Working on front-end and back-end development as required.</li>
+          </ul>
+      </div>
+      
+      <!-- Education Section -->
+      <div class="resume-item">
+          <h3>Education</h3>
+          <h4>Bachelor's in Computer Engineering</h4>
+          <p><em>Vilnius Gediminas Technical University</em></p>
+          <p>2018 - 2024</p>
+          <ul>
+              <li>Studied core concepts in computer engineering, programming, and web development.</li>
+              <li>Completed projects in web development, embedded systems, and software engineering.</li>
+              <li>Achieved a strong foundation in both theoretical and practical aspects of engineering.</li>
+          </ul>
+      </div>
+  </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Services</h2>
+            <p>Offering web development services, from design to deployment.</p>
+            
+            <!-- Local Video -->
+            <video controls width="300">
+                <source src="assets/img/hero-bg.mp4" type="video/mp4">
+            </video>
+            
+            <!-- YouTube Video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?feature=shared" style="border: none;" allowfullscreen></iframe>
+            
+            <!-- Audio File -->
+            <audio controls>
+                <source src="assets/img/hero-bg.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="assets/img/hero-bg2.jpg" alt="Project 1">
+                <p>Project 1 - A web development project showcasing my skills in front-end design.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="assets/img/hero-bg3.jpg" alt="Project 2">
+                <p>Project 2 - A full-stack application demonstrating my skills in back-end development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out via Instagram or email.</p>
+            <p><strong>Instagram:</strong> <a href="https://instagram.com/ayazmasa" target="_blank">ayazmasa</a></p>
+            <p><strong>Email:</strong> <a href="mailto:ayazmasa123@gmail.com">ayazmasa123@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container text-center">
+            <p>&copy; Ayaz Masa. All Rights Reserved.</p>
+            <p>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
-
