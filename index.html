@@ -25,8 +25,9 @@
     <!-- Header with Navigation -->
     <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container-fluid d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
-                <h1 class="sitename">Ayaz Masa</h1>
+            <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="Logo" style="height: 50px;">
+                <h1 class="sitename ms-2">Ayaz Masa</h1>
             </a>
             <nav id="navmenu" class="navmenu">
                 <ul>
@@ -37,10 +38,12 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <i class="mobile-nav-toggle bi bi-list"></i>
             </nav>
         </div>
     </header>
+    
+
+    
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
@@ -70,6 +73,10 @@
 <section id="resume">
   <div class="container">
       <h2>Resume</h2>
+      <!-- Light/Dark Mode Toggle Button -->
+      <button id="theme-toggle" class="theme-toggle">Switch to Dark Mode</button>
+
+
       
       <!-- Experience Section -->
       <div class="resume-item">
@@ -151,12 +158,19 @@
     <footer id="footer" class="footer">
         <div class="container text-center">
             <p>&copy; Ayaz Masa. All Rights Reserved.</p>
-            <p>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
+            <div class="social-links">
+                <a href="https://instagram.com/ayazmasa" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="mailto:ayazmasa123@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/ayazmasa" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p>Designed by Ayaz Masa</p>
         </div>
     </footer>
+    
 
     <!-- JavaScript Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/function.js"></script>
 </body>
 </html>
