@@ -19,3 +19,47 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Theme toggle button not found.');
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollTopButton = document.querySelector('#scroll-top');
+
+    // Show or hide the button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            scrollTopButton.classList.add('active');
+        } else {
+            scrollTopButton.classList.remove('active');
+        }
+    });
+
+    // Smooth scroll to top when the button is clicked
+    scrollTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    });
+});
+
+
+// Interactive Clock Function
+function updateClock() {
+    const clockElement = document.getElementById('clock');
+    const now = new Date();
+
+    // Format time as HH:MM:SS
+    const timeString = now.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+    });
+
+    // Update the clock element
+    clockElement.textContent = timeString;
+}
+
+// Call updateClock every second
+setInterval(updateClock, 1000);
+
+// Initialize clock immediately on page load
+updateClock();
