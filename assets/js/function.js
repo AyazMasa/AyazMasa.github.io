@@ -2,8 +2,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleButton = document.querySelector('#theme-toggle');
     
-    // Check if the button exists
+    // Enable dark mode by default on page load
+    document.body.classList.add('dark-mode');
+
+    // Update the button text to reflect the current mode
     if (themeToggleButton) {
+        themeToggleButton.textContent = 'Switch to Light Mode';
+        
         themeToggleButton.addEventListener('click', () => {
             // Toggle dark mode class on the body
             document.body.classList.toggle('dark-mode');
@@ -20,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Scroll-to-Top Button Functionality
 document.addEventListener('DOMContentLoaded', () => {
     const scrollTopButton = document.querySelector('#scroll-top');
 
@@ -41,10 +47,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 // Interactive Clock Function
 function updateClock() {
     const clockElement = document.getElementById('clock');
+    if (!clockElement) return; // Exit if no clock element is found
+
     const now = new Date();
 
     // Format time as HH:MM:SS

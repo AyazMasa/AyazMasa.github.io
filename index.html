@@ -35,10 +35,9 @@
                 <ul>
                     <li><a href="#hero" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
                     <li><a href="#resume">Resume</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#footer">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -70,6 +69,16 @@
                 <circle cx="12" cy="12" r="4" fill="#34b7a7" />
                 <path d="M9 2h6v3h-6zm9.9 4.4l2.1-2.1 2.1 2.1-2.1 2.1zM2 9v6h3V9zm2.4 9.9l-2.1 2.1 2.1 2.1 2.1-2.1zm12.2 2.1h6v-3h-6zm-9.9-2.4l-2.1-2.1-2.1 2.1 2.1 2.1zM22 15v-6h-3v6z" fill="#444444" />
             </svg>
+        </div>
+    </section>
+
+       <!-- Skills -->
+       <section id="services">
+        <div class="container">
+            <h2>Skills</h2>
+            <p> Languages: HTML, CSS, JavaScript, Python, Node.js, SQL, C++, Java </p>
+            <p> Tools: VS Code, GitHub, Figma, Docker</p>    
+            <p> Frameworks/Libraries: React, Vue.js, Django</p>
         </div>
     </section>
 
@@ -109,117 +118,6 @@
 </div>
 </section>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Services</h2>
-            <p>Offering web development services, from design to deployment.</p>
-            <!-- Local Video -->
-            <video controls width="300">
-                <source src="assets/img/hero-bg.mp4" type="video/mp4">
-            </video>
-            <!-- YouTube Video -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" style="border: none;" allowfullscreen></iframe>
-            <!-- Audio File -->
-            <audio controls>
-                <source src="assets/img/hero-bg.mp3" type="audio/mp3">
-            </audio>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="portfolio-item">
-                <img src="assets/img/hero-bg2.jpg" alt="Project 1">
-                <p>Project 1 - A web development project showcasing my skills in front-end design.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="assets/img/hero-bg3.jpg" alt="Project 2">
-                <p>Project 2 - A full-stack application demonstrating my skills in back-end development.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to reach out via Instagram or email.</p>
-            <p><strong>Instagram:</strong> <a href="https://instagram.com/ayazmasa" target="_blank">ayazmasa</a></p>
-            <p><strong>Email:</strong> <a href="mailto:ayazmasa123@gmail.com">ayazmasa123@gmail.com</a></p>
-            <form id="contactForm">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" required><br><br>
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="phone">Phone Number:</label>
-                <input type="text" id="phone" name="phone" required><br><br>
-                <label for="address">Address:</label>
-                <textarea id="address" name="address" rows="3" required></textarea><br><br>
-                <h3>Rate the following (1-10):</h3>
-                <label for="question1">Website design:</label>
-                <input type="number" id="question1" name="question1" min="1" max="10" required><br><br>
-                <label for="question2">Ease of navigation:</label>
-                <input type="number" id="question2" name="question2" min="1" max="10" required><br><br>
-                <label for="question3">Satisfaction with services:</label>
-                <input type="number" id="question3" name="question3" min="1" max="10" required><br><br>
-                <label for="question4">Recommendation likelihood:</label>
-                <input type="number" id="question4" name="question4" min="1" max="10" required><br><br>
-                <label for="question5">Overall experience:</label>
-                <input type="number" id="question5" name="question5" min="1" max="10" required><br><br>
-                <button type="button" id="submitButton">Submit</button>
-            </form>
-            <h2>Results</h2>
-            <div id="results"></div>
-        </div>
-    </section>
-
-    <!-- Math Section -->
-    <section id="mathml-section">
-        <h2>Mathematical Representation</h2>
-        <p>This is the formula for standard deviation:</p>
-        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-            <mi>&sigma;</mi>
-            <mo>=</mo>
-            <msqrt>
-                <mfrac>
-                    <mn>1</mn>
-                    <mi>N</mi>
-                </mfrac>
-                <munder>
-                    <mo>&sum;</mo>
-                    <mrow>
-                        <mi>i</mi>
-                        <mo>=</mo>
-                        <mn>1</mn>
-                    </mrow>
-                </munder>
-                <msup>
-                    <mrow>
-                        <mo>(</mo>
-                        <msub>
-                            <mi>x</mi>
-                            <mi>i</mi>
-                        </msub>
-                        <mo>-</mo>
-                        <mi>&mu;</mi>
-                        <mo>)</mo>
-                    </mrow>
-                    <mn>2</mn>
-                </msup>
-            </msqrt>
-        </math>
-    </section>
-    
-    <!-- Clock Section -->
-    <section id="clock-section">
-        <h2>Interactive Clock</h2>
-        <div id="clock" style="font-size: 24px; font-weight: bold;"></div>
-    </section>
 
     <!-- Footer -->
     <footer id="footer" class="footer">
